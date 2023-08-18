@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Says - Eoghan Clancy</title>
+</head>
+<body>
+    <div id = "container">
+        <h3 class = "aInfo" id = "prompt">Simon Says Press Start</h3>
+        <h3 class = "aInfo" id =dbf></h3>
+        <div id = "base">
+            <button class = "lights" id = "greenCircle" onclick="circleClicked('greenCircle')"></button>
+            <button class = "lights" id = "redCircle" onclick="circleClicked('redCircle')"></button>
+            <button class = "lights" id = "blueCircle" onclick="circleClicked('blueCircle')"></button>
+            <button class = "lights" id = "yellowCircle" onclick="circleClicked('yellowCircle')"></button>
+
+            <div id = "info">
+                <label  class = "infoElms" id = hScoreLBL>00</label>
+                <button class = "infoElms" id = "startBTN" onclick="startGame()">START</button>
+                <label  class = "infoElms" id = cScoreLBL>00</label>
+                <div id = "on_off"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>
